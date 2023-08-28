@@ -14,6 +14,10 @@
 		18FD87C52A9B4DE900094D6E /* gymtasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87C42A9B4DE900094D6E /* gymtasticTests.swift */; };
 		18FD87CF2A9B4DE900094D6E /* gymtasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87CE2A9B4DE900094D6E /* gymtasticUITests.swift */; };
 		18FD87D12A9B4DE900094D6E /* gymtasticUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87D02A9B4DE900094D6E /* gymtasticUITestsLaunchTests.swift */; };
+		18FD87E22A9CA48800094D6E /* Card_Routine__Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87E12A9CA48800094D6E /* Card_Routine__Today.swift */; };
+		18FD87E42A9CAFF900094D6E /* Card_Routine__Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87E32A9CAFF900094D6E /* Card_Routine__Default.swift */; };
+		18FD87E62A9CB0FA00094D6E /* Button__Primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87E52A9CB0FA00094D6E /* Button__Primary.swift */; };
+		18FD87EB2A9CBAB100094D6E /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD87EA2A9CBAB100094D6E /* Routine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		18FD87CA2A9B4DE900094D6E /* gymtasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gymtasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD87CE2A9B4DE900094D6E /* gymtasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gymtasticUITests.swift; sourceTree = "<group>"; };
 		18FD87D02A9B4DE900094D6E /* gymtasticUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gymtasticUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18FD87E12A9CA48800094D6E /* Card_Routine__Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_Routine__Today.swift; sourceTree = "<group>"; };
+		18FD87E32A9CAFF900094D6E /* Card_Routine__Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_Routine__Default.swift; sourceTree = "<group>"; };
+		18FD87E52A9CB0FA00094D6E /* Button__Primary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button__Primary.swift; sourceTree = "<group>"; };
+		18FD87EA2A9CBAB100094D6E /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				18FD87B32A9B4DE800094D6E /* gymtasticApp.swift */,
-				18FD87B52A9B4DE800094D6E /* ContentView.swift */,
+				18FD87E82A9CBA5800094D6E /* Views */,
+				18FD87E92A9CBA7B00094D6E /* Resources */,
+				18FD87E72A9CBA4200094D6E /* Model */,
 				18FD87B72A9B4DE900094D6E /* Assets.xcassets */,
 				18FD87B92A9B4DE900094D6E /* Preview Content */,
 			);
@@ -125,6 +135,40 @@
 				18FD87D02A9B4DE900094D6E /* gymtasticUITestsLaunchTests.swift */,
 			);
 			path = gymtasticUITests;
+			sourceTree = "<group>";
+		};
+		18FD87E02A9CA44200094D6E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18FD87E12A9CA48800094D6E /* Card_Routine__Today.swift */,
+				18FD87E32A9CAFF900094D6E /* Card_Routine__Default.swift */,
+				18FD87E52A9CB0FA00094D6E /* Button__Primary.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18FD87E72A9CBA4200094D6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18FD87EA2A9CBAB100094D6E /* Routine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18FD87E82A9CBA5800094D6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18FD87E02A9CA44200094D6E /* Components */,
+				18FD87B52A9B4DE800094D6E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18FD87E92A9CBA7B00094D6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FD87E62A9CB0FA00094D6E /* Button__Primary.swift in Sources */,
+				18FD87E42A9CAFF900094D6E /* Card_Routine__Default.swift in Sources */,
+				18FD87EB2A9CBAB100094D6E /* Routine.swift in Sources */,
 				18FD87B62A9B4DE800094D6E /* ContentView.swift in Sources */,
+				18FD87E22A9CA48800094D6E /* Card_Routine__Today.swift in Sources */,
 				18FD87B42A9B4DE800094D6E /* gymtasticApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gymtastic/Preview Content\"";
+				DEVELOPMENT_TEAM = 3M6C8L4M5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gymtastic/Preview Content\"";
+				DEVELOPMENT_TEAM = 3M6C8L4M5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
