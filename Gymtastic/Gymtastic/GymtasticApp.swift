@@ -11,7 +11,7 @@ import SwiftUI
 struct GymtasticApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
         }
     }
 }

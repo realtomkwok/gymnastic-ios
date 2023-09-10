@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */; };
-		18DA40C82AAC37EE00EF4333 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C72AAC37EE00EF4333 /* ContentView.swift */; };
+		18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C72AAC37EE00EF4333 /* StartView.swift */; };
 		18DA40CA2AAC37EF00EF4333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA40C92AAC37EF00EF4333 /* Assets.xcassets */; };
 		18DA40CD2AAC37EF00EF4333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA40CC2AAC37EF00EF4333 /* Preview Assets.xcassets */; };
+		18DA40D62AAC3CFA00EF4333 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D52AAC3CFA00EF4333 /* Theme.swift */; };
+		18DA40D82AAC47FC00EF4333 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D72AAC47FC00EF4333 /* Routine.swift */; };
+		18DA40DA2AAC494500EF4333 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D92AAC494500EF4333 /* DayOfWeek.swift */; };
+		18DA40DC2AAC4D1200EF4333 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40DB2AAC4D1200EF4333 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18DA40C22AAC37EE00EF4333 /* Gymtastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymtastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymtasticApp.swift; sourceTree = "<group>"; };
-		18DA40C72AAC37EE00EF4333 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18DA40C72AAC37EE00EF4333 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		18DA40C92AAC37EF00EF4333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DA40CC2AAC37EF00EF4333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18DA40D52AAC3CFA00EF4333 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		18DA40D72AAC47FC00EF4333 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Routine.swift; path = ../../../../../Documents/Routine.swift; sourceTree = "<group>"; };
+		18DA40D92AAC494500EF4333 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		18DA40DB2AAC4D1200EF4333 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		18DA40C42AAC37EE00EF4333 /* Gymtastic */ = {
 			isa = PBXGroup;
 			children = (
+				18DA40D42AAC3CB700EF4333 /* Views */,
+				18DA40D32AAC3CB000EF4333 /* Models */,
 				18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */,
-				18DA40C72AAC37EE00EF4333 /* ContentView.swift */,
 				18DA40C92AAC37EF00EF4333 /* Assets.xcassets */,
 				18DA40CB2AAC37EF00EF4333 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				18DA40CC2AAC37EF00EF4333 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18DA40D32AAC3CB000EF4333 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18DA40D52AAC3CFA00EF4333 /* Theme.swift */,
+				18DA40D72AAC47FC00EF4333 /* Routine.swift */,
+				18DA40D92AAC494500EF4333 /* DayOfWeek.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18DA40D42AAC3CB700EF4333 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18DA40C72AAC37EE00EF4333 /* StartView.swift */,
+				18DA40DB2AAC4D1200EF4333 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DA40C82AAC37EE00EF4333 /* ContentView.swift in Sources */,
+				18DA40D62AAC3CFA00EF4333 /* Theme.swift in Sources */,
+				18DA40DA2AAC494500EF4333 /* DayOfWeek.swift in Sources */,
+				18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */,
+				18DA40D82AAC47FC00EF4333 /* Routine.swift in Sources */,
+				18DA40DC2AAC4D1200EF4333 /* CardView.swift in Sources */,
 				18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

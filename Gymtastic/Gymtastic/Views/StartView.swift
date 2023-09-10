@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StartView.swift
 //  Gymtastic
 //
 //  Created by Tom Kwok on 9/9/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,8 +19,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StartView()
     }
 }
