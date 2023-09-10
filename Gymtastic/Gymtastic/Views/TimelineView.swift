@@ -26,6 +26,7 @@ struct TimelineView: View {
             .listRowSeparator(.hidden)
         }
             .listStyle(.plain)
+            .navigationTitle("Gymtastics")
     }
 }
 

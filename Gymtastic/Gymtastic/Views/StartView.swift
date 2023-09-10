@@ -11,7 +11,9 @@ struct StartView: View {
     let routines: [Routine]
     
     var body: some View {
-        Text("Hello, world")
+        NavigationStack {
+            TimelineView(routines: routines)
+        }
     }
 }
 

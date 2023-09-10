@@ -11,7 +11,49 @@ struct RoutineDetailView: View {
     let routine: Routine
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Group {
+                Text(routine.title)
+                    .font(.system(size: 64))
+                    .tracking(-1)
+   
+            }
+                .padding()
+                .frame(minHeight: 200)
+            Group {
+                HStack {
+                    Text("Exercises")
+                        .font(.title3)
+                    Spacer()
+                    Button(action: {}) {
+                        Label("Add", systemImage: "plus.circle")
+                            .labelStyle(.iconOnly)
+                    }
+                    .buttonStyle(.borderless)
+                }
+                .padding()
+                VStack(spacing: 0) {
+                    ForEach(routine.exercises) { exercise in
+                        ZStack {
+                            NavigationLink(destination: {}) {
+                                EmptyView()
+                            }
+                            List_ItemView(exercise: exercise)
+                        }
+                    }
+                }
+            }
+            Spacer()
+        }
+        .foregroundColor(routine.theme.accentColor)
+        .background(routine.theme.mainColor)
+        .toolbar {
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Edit", action: {})
+            }
+        }
+        .foregroundColor(routine.theme.accentColor)
+        
     }
 }
 
