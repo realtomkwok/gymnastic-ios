@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct StartView: View {
+    let routines: [Routine]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Hello, world")
     }
 }
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        StartView()
+        StartView(routines: Routine.sampleData)
     }
 }

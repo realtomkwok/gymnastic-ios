@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187F40282AAD5AD3007A9674 /* Card_DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F40272AAD5AD3007A9674 /* Card_DateView.swift */; };
+		187F402A2AAD5C20007A9674 /* Card_TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F40292AAD5C20007A9674 /* Card_TimelineView.swift */; };
+		187F402C2AAD6221007A9674 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F402B2AAD6221007A9674 /* TimelineView.swift */; };
 		18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */; };
 		18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C72AAC37EE00EF4333 /* StartView.swift */; };
 		18DA40CA2AAC37EF00EF4333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA40C92AAC37EF00EF4333 /* Assets.xcassets */; };
@@ -14,10 +17,13 @@
 		18DA40D62AAC3CFA00EF4333 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D52AAC3CFA00EF4333 /* Theme.swift */; };
 		18DA40D82AAC47FC00EF4333 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D72AAC47FC00EF4333 /* Routine.swift */; };
 		18DA40DA2AAC494500EF4333 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40D92AAC494500EF4333 /* DayOfWeek.swift */; };
-		18DA40DC2AAC4D1200EF4333 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40DB2AAC4D1200EF4333 /* CardView.swift */; };
+		18DA40DC2AAC4D1200EF4333 /* Card_RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40DB2AAC4D1200EF4333 /* Card_RoutineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187F40272AAD5AD3007A9674 /* Card_DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_DateView.swift; sourceTree = "<group>"; };
+		187F40292AAD5C20007A9674 /* Card_TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_TimelineView.swift; sourceTree = "<group>"; };
+		187F402B2AAD6221007A9674 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		18DA40C22AAC37EE00EF4333 /* Gymtastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymtastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymtasticApp.swift; sourceTree = "<group>"; };
 		18DA40C72AAC37EE00EF4333 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -26,7 +32,7 @@
 		18DA40D52AAC3CFA00EF4333 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		18DA40D72AAC47FC00EF4333 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Routine.swift; path = ../../../../../Documents/Routine.swift; sourceTree = "<group>"; };
 		18DA40D92AAC494500EF4333 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
-		18DA40DB2AAC4D1200EF4333 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		18DA40DB2AAC4D1200EF4333 /* Card_RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_RoutineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				18DA40C72AAC37EE00EF4333 /* StartView.swift */,
-				18DA40DB2AAC4D1200EF4333 /* CardView.swift */,
+				18DA40DB2AAC4D1200EF4333 /* Card_RoutineView.swift */,
+				187F40272AAD5AD3007A9674 /* Card_DateView.swift */,
+				187F40292AAD5C20007A9674 /* Card_TimelineView.swift */,
+				187F402B2AAD6221007A9674 /* TimelineView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,8 +178,11 @@
 				18DA40DA2AAC494500EF4333 /* DayOfWeek.swift in Sources */,
 				18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */,
 				18DA40D82AAC47FC00EF4333 /* Routine.swift in Sources */,
-				18DA40DC2AAC4D1200EF4333 /* CardView.swift in Sources */,
+				18DA40DC2AAC4D1200EF4333 /* Card_RoutineView.swift in Sources */,
+				187F402A2AAD5C20007A9674 /* Card_TimelineView.swift in Sources */,
 				18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */,
+				187F402C2AAD6221007A9674 /* TimelineView.swift in Sources */,
+				187F40282AAD5AD3007A9674 /* Card_DateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
