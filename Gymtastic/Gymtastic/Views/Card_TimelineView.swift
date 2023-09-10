@@ -13,9 +13,9 @@ struct Card_TimelineView: View {
     var body: some View {
         HStack(spacing: 0) {
             Card_DateView(routine: routine)
-                .frame(minWidth: 157, maxWidth: 157, maxHeight: .infinity, alignment: .topLeading)
+                .frame(minWidth: 157, maxWidth: 157, minHeight: 191, maxHeight: .infinity, alignment: .topLeading)
             Card_RoutineView(routine: routine)
-                .frame(minWidth: 235, maxWidth: 235, maxHeight: .infinity, alignment: .bottom)
+                .frame(minWidth: 235, maxWidth: 235, minHeight: 191, maxHeight: .infinity, alignment: .bottom)
 
         }
             
@@ -26,6 +26,6 @@ struct Card_TimelineView_Previews: PreviewProvider {
     static var routine = Routine.sampleData[0]
     static var previews: some View {
         Card_TimelineView(routine: routine)
-            .previewLayout(.fixed(width: 391, height: 191))
+            .previewLayout(.fixed(width: 394, height: 191))
     }
 }

@@ -9,12 +9,21 @@ import SwiftUI
 
 struct TimelineView: View {
     let routines: [Routine]
+    
     var body: some View {
         List {
             ForEach(routines) { routine in
-                Card_TimelineView(routine: routine)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                // fixed the chevron issue with NavigationLinks
+                ZStack {
+                    NavigationLink(destination: RoutineDetailView(routine: routine)) {
+                        EmptyView()
+                    }
+//                        .buttonStyle(.plain)
+                    Card_TimelineView(routine: routine)
+                }
             }
+            .listRowInsets(EdgeInsets())
+            .listRowSeparator(.hidden)
         }
             .listStyle(.plain)
     }
@@ -22,6 +31,8 @@ struct TimelineView: View {
 
 struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineView(routines: Routine.sampleData)
+        NavigationStack {
+            TimelineView(routines: Routine.sampleData)
+        }
     }
 }

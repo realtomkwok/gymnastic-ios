@@ -27,12 +27,13 @@ struct Card_DateView: View {
             Spacer()
         }
             .padding()
-            .background(.quaternary)
+//            .background(.quaternary)
             .cornerRadius(16)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(.primary, lineWidth: 1)
             )
+            .foregroundColor(.primary)
     }
 }
 
