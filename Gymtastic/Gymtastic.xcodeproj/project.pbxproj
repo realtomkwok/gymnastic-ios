@@ -12,6 +12,8 @@
 		187F402C2AAD6221007A9674 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F402B2AAD6221007A9674 /* TimelineView.swift */; };
 		187F402E2AAD77B5007A9674 /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F402D2AAD77B5007A9674 /* RoutineDetailView.swift */; };
 		187F40302AADCF29007A9674 /* List_ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F402F2AADCF29007A9674 /* List_ItemView.swift */; };
+		187F40322AAEBDD6007A9674 /* DayOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F40312AAEBDD6007A9674 /* DayOfWeekView.swift */; };
+		187F40342AAED287007A9674 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F40332AAED287007A9674 /* NavBarView.swift */; };
 		18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */; };
 		18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA40C72AAC37EE00EF4333 /* StartView.swift */; };
 		18DA40CA2AAC37EF00EF4333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA40C92AAC37EF00EF4333 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		187F402B2AAD6221007A9674 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		187F402D2AAD77B5007A9674 /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
 		187F402F2AADCF29007A9674 /* List_ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_ItemView.swift; sourceTree = "<group>"; };
+		187F40312AAEBDD6007A9674 /* DayOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekView.swift; sourceTree = "<group>"; };
+		187F40332AAED287007A9674 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		18DA40C22AAC37EE00EF4333 /* Gymtastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymtastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DA40C52AAC37EE00EF4333 /* GymtasticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymtasticApp.swift; sourceTree = "<group>"; };
 		18DA40C72AAC37EE00EF4333 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				187F402B2AAD6221007A9674 /* TimelineView.swift */,
 				187F402D2AAD77B5007A9674 /* RoutineDetailView.swift */,
 				187F402F2AADCF29007A9674 /* List_ItemView.swift */,
+				187F40312AAEBDD6007A9674 /* DayOfWeekView.swift */,
+				187F40332AAED287007A9674 /* NavBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 				18DA40DA2AAC494500EF4333 /* DayOfWeek.swift in Sources */,
 				187F402E2AAD77B5007A9674 /* RoutineDetailView.swift in Sources */,
 				18DA40C82AAC37EE00EF4333 /* StartView.swift in Sources */,
+				187F40322AAEBDD6007A9674 /* DayOfWeekView.swift in Sources */,
 				18DA40D82AAC47FC00EF4333 /* Routine.swift in Sources */,
 				18DA40DC2AAC4D1200EF4333 /* Card_RoutineView.swift in Sources */,
 				187F40302AADCF29007A9674 /* List_ItemView.swift in Sources */,
 				187F402A2AAD5C20007A9674 /* Card_TimelineView.swift in Sources */,
+				187F40342AAED287007A9674 /* NavBarView.swift in Sources */,
 				18DA40C62AAC37EE00EF4333 /* GymtasticApp.swift in Sources */,
 				187F402C2AAD6221007A9674 /* TimelineView.swift in Sources */,
 				187F40282AAD5AD3007A9674 /* Card_DateView.swift in Sources */,

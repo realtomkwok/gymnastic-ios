@@ -27,6 +27,7 @@ struct TimelineView: View {
         }
             .listStyle(.plain)
             .navigationTitle("Gymtastics")
+
     }
 }
 
