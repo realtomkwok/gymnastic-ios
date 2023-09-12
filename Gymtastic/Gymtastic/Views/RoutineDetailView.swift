@@ -11,19 +11,12 @@ struct RoutineDetailView: View {
     let routine: Routine
     
     var body: some View {
+        
         ZStack {
             routine.theme.mainColor.ignoresSafeArea()
             
-            VStack(alignment: .leading) {
-                Group {
-                    Text(routine.title)
-                        .font(.system(size: 64))
-                        .tracking(-1)
-                    
-                }
-                .padding()
-                .frame(minHeight: 200)
-                DayOfWeekView(routine: routine)
+            VStack() {
+                DayOfWeekView(routine: routine, accentColor: routine.theme.accentColor, bgColor: Color)
                 Group {
                     HStack {
                         Text("Exercises")
@@ -50,20 +43,26 @@ struct RoutineDetailView: View {
                 Spacer()
             }
             .foregroundColor(routine.theme.accentColor)
-            .navigationTitle(routine.title)
+            
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Edit", action: {})
                 }
             }
         }
+        .navBarItems(
+            title: routine.title,
+            actionButtonLabel: "Edit",
+            bgColor: routine.theme.mainColor,
+            accentColor: routine.theme.accentColor
+        )
     }
 }
 
 struct RoutineDetailView_Previews: PreviewProvider {
     static var routine = Routine.sampleData[0]
     static var previews: some View {
-        NavigationStack {
+        NavBarContainerView {
             RoutineDetailView(routine: routine)
         }
     }

@@ -11,23 +11,21 @@ struct TimelineView: View {
     let routines: [Routine]
     
     var body: some View {
-        List {
-            ForEach(routines) { routine in
-                // fixed the chevron issue with NavigationLinks
-                ZStack {
-                    NavigationLink(destination: RoutineDetailView(routine: routine)) {
-                        EmptyView()
+        NavBarContainerView {
+            VStack(spacing: 0) {
+                ForEach(routines) { routine in
+                    NavLink(destination: RoutineDetailView(routine: routine)) {
+                        Card_TimelineView(routine: routine)
                     }
-//                        .buttonStyle(.plain)
-                    Card_TimelineView(routine: routine)
                 }
             }
-            .listRowInsets(EdgeInsets())
-            .listRowSeparator(.hidden)
+            .navTitle("Gymtastic")
+            .navLargeTitle(false)
+            .navBackButtonHidden(true)
+            .navActionButtonHidden(true)
+            .navBgColor(Color(uiColor: UIColor.systemBackground))
+            .navAccentColor(Color(uiColor: UIColor.label))
         }
-            .listStyle(.plain)
-            .navigationTitle("Gymtastics")
-
     }
 }
 

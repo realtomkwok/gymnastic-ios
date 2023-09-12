@@ -13,9 +13,9 @@ struct Card_TimelineView: View {
     var body: some View {
         HStack(spacing: 0) {
             Card_DateView(routine: routine)
-                .frame(minWidth: 157, maxWidth: 157, minHeight: 191, maxHeight: .infinity, alignment: .topLeading)
+                .frame(minWidth: 157, maxWidth: .infinity, minHeight: 191, maxHeight: .infinity, alignment: .topLeading)
             Card_RoutineView(routine: routine)
-                .frame(minWidth: 235, maxWidth: 235, minHeight: 191, maxHeight: .infinity, alignment: .bottom)
+                .frame(minWidth: 235, maxWidth: .infinity, minHeight: 191, maxHeight: .infinity, alignment: .bottom)
 
         }
             
